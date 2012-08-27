@@ -1,0 +1,2 @@
+class KitAction < ActiveRecord::Base
+end

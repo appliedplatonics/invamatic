@@ -1,0 +1,13 @@
+ID: <%= @part.id %><br/>
+Name: <%= @part.name %><br/>
+Group: <%= @part.group %><br/>
+Value: <%= @part.value %><br/>
+Avg price: <%= @part.avg_price %><br/>
+On-hand: <%= @part.onhand %><br/>
+
+<% @part.order_lines.each { |ol| %>
+OL: <%=   render :partial => "order_lines/show", :locals => {:order_line => ol} %><br/>
+<% } %>
+
+<%= link_to 'Edit', edit_part_path(@part) %> |
+<%= link_to 'Back', parts_path %>

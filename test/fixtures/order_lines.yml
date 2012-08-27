@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  part_id: 
+  supplier: MyString
+  supplier_partno: MyString
+  manu_partno: MyString
+  price: 1.5
+  quantity: 
+  cost: 1.5
+  supplier_desc: MyString
+
+two:
+  part_id: 
+  supplier: MyString
+  supplier_partno: MyString
+  manu_partno: MyString
+  price: 1.5
+  quantity: 
+  cost: 1.5
+  supplier_desc: MyString

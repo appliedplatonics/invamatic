@@ -1,0 +1,14 @@
+# Usage: ./script/runner ./script/howmany.rb kit_id
+
+kit_id = ARGV[0].to_i
+number = ARGV[1].to_i
+
+if (!ARGV[0] || !ARGV[1]) then
+  puts "Usage: ./script/runner ./script/howmany.rb kit_id"
+  puts "Where kit_id is one of:..."
+  Kit.all.each { |k| puts "\t#{k.id}\t#{k.name}/#{k.description}" }
+  exit
+end
+
+puts "Number of kits produceable, given component X"
+puts "N\tX"

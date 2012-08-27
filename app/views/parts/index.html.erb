@@ -1,0 +1,24 @@
+<h1>Listing parts</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for part in @parts %>
+  <tr>
+    <td><%= part.id %></td>
+    <td><%= part.group %></td>
+    <td><%= part.value %></td>
+    <td><%= part.name %></td>
+    <td><%= part.onhand %></td>
+    <td><%= part.order_lines.count %></td>
+    <td><%= link_to 'Show', part %></td>
+    <td><%= link_to 'Edit', edit_part_path(part) %></td>
+    <td><%= link_to 'Destroy', part, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New part', new_part_path %>

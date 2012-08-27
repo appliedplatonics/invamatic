@@ -1,0 +1,20 @@
+# Usave: import_kits.rb foo.tsv
+# foo.tsv needs to have a part_ids column, containing comma-delimited part ids.
+
+file = File.open(ARGV[0])
+
+headline = file.gets()
+headline.chomp!
+cols = headline.split("\t")
+cols.map! { |x| x && x.gsub(/^"(.*)"$/, '\1');  }
+
+puts cols.inspect()
+
+while (l = file.gets()) do
+  next if l.match(/^\s*$/)
+  l.chomp!
+  vals = l.split("\t")
+  vals.map! { |x| x && x.gsub(/^"?(.*)"$/, '\1');  }
+
+  h = {"supplier" => ARGV[0]}
+  cols.each_with_index { |c_i, i| h[c_i] = vals[i] }

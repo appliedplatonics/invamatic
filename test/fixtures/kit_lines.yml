@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  kit_id: 1
+  part_id: 1
+  count: 1
+
+two:
+  kit_id: 1
+  part_id: 1
+  count: 1

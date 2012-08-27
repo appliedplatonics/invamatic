@@ -1,0 +1,12 @@
+<h1>Editing kit</h1>
+
+<% form_for(@kit) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @kit %> |
+<%= link_to 'Back', kits_path %>

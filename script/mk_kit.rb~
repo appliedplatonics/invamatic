@@ -1,0 +1,3 @@
+# Usage: ./script/runner kit_id number_to_run
+
+k = Kit.find(
