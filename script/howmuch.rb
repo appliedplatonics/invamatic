@@ -1,4 +1,10 @@
 # Usage: ./script/runner ./script/howmany.rb kit_id
+#
+# Computes the total cost of a kit, given the average cost for the
+# component items on-hand.
+#
+# Also uses the "times two" rule of thumb for generating MSRP; this
+# may be lower than you want.
 
 kit_id = ARGV[0].to_i
 

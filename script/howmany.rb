@@ -1,4 +1,11 @@
+#!./script/runner
+#
 # Usage: ./script/runner ./script/howmany.rb kit_id
+#
+# Computes how many of a given kit can be produced, given the supplies
+# on hand.
+#
+
 
 kit_id = ARGV[0].to_i
 

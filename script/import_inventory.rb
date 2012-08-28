@@ -1,6 +1,15 @@
 #!./script/runner
 
-#Usage: import_inventory "supplier" file.tsv
+# Usage: import_inventory "supplier" file.tsv
+#
+# Imports a bunch of line items from the given supplier, contained in
+# the file file.tsv.  If line items in the invoice don't have a part
+# in the local database, one is automatically created.
+#
+# If you want a line item to have a specific part_id (ie if you're
+# adding a new supplier for an existing part), you need to populate
+# the part_id column of the TSV with the appropriate part_id.
+#
 
 file = File.open(ARGV[1])
 if !file then

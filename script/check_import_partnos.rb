@@ -1,6 +1,14 @@
 #!./script/runner
-
-#Usage: import_inventory "supplier" file.tsv
+#
+# This is a quick sanity check to ensure that all the vendor parts in
+# a given invoice import have corresponding internal part numbers
+# here.
+#
+#
+# Usage:  check_import_partnos.rb "supplier" file.tsv
+#
+# Output: Two lines per part, showing you what the import TSV line
+#         was, as well as what it matches in the existing database
 
 file = File.open(ARGV[1])
 if !file then

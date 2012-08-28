@@ -1,4 +1,9 @@
 # Usage: ./script/runner kit_id number_to_run
+#
+# This script will update your inventory, removing all the parts
+# needed for number_to_run copies of kit #kit_id from inventory, and
+# adding that many of the kit itself to the kit history table.
+#
 
 kit_id = ARGV[0].to_i
 number = ARGV[1].to_i

@@ -1,5 +1,15 @@
-# Usave: import_kits.rb foo.tsv
+# Usage: import_kits.rb foo.tsv
+
 # foo.tsv needs to have a part_ids column, containing comma-delimited part ids.
+#
+# This is a pretty awkward specification format, and should be reconsidered.  For now, it looks like this:
+#
+#"name"	"description"	"part_ids"
+# "Analog Shield v0.1"	"Analog Input Shield"	"504,1;75,6;20,6;1,1;24,1;600,1"
+#
+# Where the Analog Input Shield is made up of 1x504, 6x75, 6x20, etc.
+#
+# This is, of course, hideous and user-unfriendly.  XXX TODO Make it a more pleasant input format.
 
 file = File.open(ARGV[0])
 
