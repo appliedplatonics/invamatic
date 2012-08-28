@@ -1,6 +1,7 @@
 # Invamatic
 
 Invamatic is Copyright (c) 2012 Applied Platonics, LLC
+
 Released as-is, with no warranty, etc, under the GPLv3
 
 ## What's Invamatic?
@@ -86,6 +87,7 @@ working.
 Importing kits is kind of awful right now.  The relevant script is in script/import_kits.rb, and it wants input like this:
 
 >  "name"	"description"	"part_ids"
+>
 >  "Analog Shield v0.1"	"Analog Input Shield"	"504,1;75,6;20,6;1,1;24,1;600,1"
 
 Where the stuff in part_ids is a semicolon-delimited list of comma
