@@ -1,19 +1,19 @@
-== Invamatic
+==Invamatic
 
 Invamatic is Copyright (c) 2012 Applied Platonics, LLC
 Released as-is, with no warranty, etc, under the GPLv3
 
-=== What's Invamatic
+===What's Invamatic
 
 Invamatic is a rails-based application for keeping track of
 electronics parts inventory at Applied Platonics, including:
 
-* The ability to have multiple suppliers for each "item" in your inventory
-* The ability to create "kits" of "items" in your inventory
-* A set of translation tools for invoices from common suppliers
-* A utility to compute the cost of a kit given the average cost of the parts you have on-hand
-* A utility to compute how many units of a given kit can be kitted up right now
-* A utility to trivially update the inventory after building N of a given kit
+ * The ability to have multiple suppliers for each "item" in your inventory
+ * The ability to create "kits" of "items" in your inventory
+ * A set of translation tools for invoices from common suppliers
+ * A utility to compute the cost of a kit given the average cost of the parts you have on-hand
+ * A utility to compute how many units of a given kit can be kitted up right now
+ * A utility to trivially update the inventory after building N of a given kit
 
 There should probably be a web UI, what with it being a rails project
 and all, but that's not really something that's come up at AP.  Sorry
@@ -25,14 +25,14 @@ cost of what's actually on hand at the moment. Also, it rounds to the
 cent, which is perhaps a bit too aggressive for some especially cheap
 parts.
 
-=== About this release
+===About this release
 
 There is precious little user documentation here; consider this a
 developers-only release.  It's mostly a fast touchup of what AP uses
 internally after people were looking for something like it on a
 mailing list.
 
-=== Data Model
+===Data Model
 
 The data model here is a bit subtle, because the problem itself is subtle.
 
@@ -119,7 +119,7 @@ along with a 2x-rule-of-thumb MSRP (which is too low, should be
 higher).
 
 
-==== Building kits
+====Building kits
 
 Once you've gone through and built out a bunch of kits, and need to
 update inventory accordingly, you do:
@@ -130,7 +130,7 @@ This will update the parts on hand, removing enough of each part to
 make N kits.
 
 
-=== Support
+===Support
 
 For any and all support issues, please see your local supplier of
 sacrificial chickens. I'm happy to help people who are helping
@@ -138,4 +138,5 @@ themselves, but, unfortunately don't have enough time to offer much
 support. I will happily consider pull requests, though, especially if
 you're interested in adding a web UI for people who aren't as
 horrifically CLI-oriented as myself.
-  -- Josh Myer <josh@appliedplatonics.com>
+
+  - Josh Myer, Applied Platonics, LLC <josh@appliedplatonics.com>
