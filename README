@@ -13,6 +13,7 @@ electronics parts inventory at Applied Platonics, including:
 * A set of translation tools for invoices from common suppliers
 * A utility to compute the cost of a kit given the average cost of the parts you have on-hand
 * A utility to compute how many units of a given kit can be kitted up right now
+* A utility to trivially update the inventory after building N of a given kit
 
 There should probably be a web UI, what with it being a rails project
 and all, but that's not really something that's come up at AP.  Sorry
